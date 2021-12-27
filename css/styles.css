@@ -45,11 +45,30 @@ ul {
 }
 
 .header-link {
+  position: relative;
+  padding: 40px 0;
   font-weight: 500;
   font-size: 16px;
   line-height: calc(20 / 16);
   color: #ffffff;
 }
+
+.header-list .header-link.current {
+  color: #ffffff;
+}
+
+.header-link.current::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  border-radius: 1px;
+  background-color: #ffffff;
+}
+
 .list {
   list-style: none;
 }
@@ -320,4 +339,40 @@ ul {
 
 .projects-item:not(:last-child) {
   margin-right: 30px;
+}
+
+/*------------ABOUT US----------*/
+
+.about-us {
+  background-image: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.15),
+      rgba(255, 255, 255, 0.15)
+    ),
+    url(../images/about-background.jpg);
+  background-repeat: no-repeat;
+  padding-bottom: 85px;
+}
+
+.about-title {
+  padding-top: 70px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.47;
+  text-align: center;
+  color: #ffffff;
+}
+
+.about-description {
+  margin-bottom: 70px;
+  font-size: 16px;
+  line-height: 1.56;
+  text-align: center;
+  color: #ffffff;
+}
+
+.about-video {
+  display: flex;
+  justify-content: center;
 }
