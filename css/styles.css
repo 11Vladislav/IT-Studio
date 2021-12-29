@@ -65,7 +65,7 @@ address {
   content: "";
   display: block;
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   height: 2px;
   width: 100%;
@@ -87,8 +87,8 @@ address {
     ),
     url(../images/main-background.jpg);
   padding-top: 319px;
-
-  padding-bottom: 335px;
+  background-repeat: no-repeat;
+  padding-bottom: 319px;
 }
 .hero-text {
   font-weight: 500;
@@ -154,14 +154,44 @@ address {
 .ourwork-list {
   display: flex;
   margin-right: -27px;
-  margin-bottom: 50px;
+  margin-bottom: 55px;
 }
 
 .ourwork-item {
+  padding-top: 51px;
   flex-basis: calc(100% / 3 - 27px);
   margin-right: 27px;
 }
+
+.working-icons-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 17px;
+  padding: 10px;
+  width: 110px;
+  height: 110px;
+  border: 1px solid #e0e0e0;
+  border-radius: 50%;
+}
+
+.working-icons {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #4985ff;
+  border-radius: 50%;
+}
+
+.making {
+  width: 40px;
+  height: 40px;
+}
+
 .ourwork-list-title {
+  max-width: 226px;
   font-weight: 600;
   font-size: 18px;
   line-height: 1.22;
@@ -170,6 +200,7 @@ address {
 }
 
 .ourwork-list-text {
+  max-width: 226px;
   font-size: 14px;
   line-height: 22px;
   color: #999999;
@@ -223,6 +254,8 @@ address {
 }
 
 .standart-item span {
+  display: flex;
+  align-items: baseline;
   font-size: 36px;
   line-height: 1.47;
   color: #000000;
@@ -232,6 +265,16 @@ address {
   font-size: 16px;
   line-height: 1.25;
   color: #999999;
+}
+
+.web-icons {
+  display: flex;
+  margin-right: 20px;
+}
+
+.web-programming-icon {
+  width: 30px;
+  height: 30px;
 }
 
 .works {
@@ -413,13 +456,13 @@ address {
 
 .email-input {
   min-width: 299px;
+  padding: 15px 33px;
   border: 1px solid #f2f2f2;
   box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
   border-radius: 30px 0px 0px 30px;
 }
 
 .email-input::placeholder {
-  padding-left: 33px;
   font-size: 13px;
   line-height: 1.61;
   color: #999999;
@@ -443,6 +486,7 @@ address {
   font-size: 16px;
   line-height: 1, 25;
   text-align: center;
+  cursor: pointer;
   color: #ffffff;
   background: #4985ff;
   box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
@@ -468,6 +512,12 @@ address {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.22;
+}
+
+.footer-icon {
+  margin-right: 15px;
+  height: 15px;
+  width: 15px;
 }
 
 .sub-list {
