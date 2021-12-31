@@ -28,6 +28,12 @@ address {
   margin: 0 auto;
 }
 
+iframe {
+  width: 970px;
+  height: 430px;
+  border: 0;
+}
+
 .header {
   position: absolute;
   top: 0;
@@ -158,18 +164,15 @@ address {
 }
 
 .ourwork-item {
-  padding-top: 51px;
+  display: flex;
   flex-basis: calc(100% / 3 - 27px);
   margin-right: 27px;
 }
 
 .working-icons-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-right: 17px;
   padding: 10px;
-  width: 110px;
+  max-width: 110px;
   height: 110px;
   border: 1px solid #e0e0e0;
   border-radius: 50%;
@@ -188,6 +191,11 @@ address {
 .making {
   width: 40px;
   height: 40px;
+}
+
+.ourwork-text-wrap {
+  padding-top: 51px;
+  max-width: 226px;
 }
 
 .ourwork-list-title {
@@ -261,6 +269,10 @@ address {
   color: #000000;
 }
 
+.standarts-wrap {
+  display: flex;
+}
+
 .standart-item-text {
   font-size: 16px;
   line-height: 1.25;
@@ -268,7 +280,7 @@ address {
 }
 
 .web-icons {
-  display: flex;
+  padding-top: 10px;
   margin-right: 20px;
 }
 
